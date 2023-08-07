@@ -1,0 +1,2 @@
+# QA_Beta_Mainfraime_Cortex_02
+QA_Part_02_Augstus
