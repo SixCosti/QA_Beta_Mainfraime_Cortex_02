@@ -4,19 +4,19 @@ length = len(ages)
 print("Length of ages list: {}".format(length))
 reserved = 0
 
-for age in ages:
+#for age in ages:
     #print(age)
     #print(age+1)
-    ages[reserved] = age + 1
-    reserved = reserved + 1 
+#    ages[reserved] = age + 1
+#    reserved = reserved + 1 
     
-    if age >= 65:
-        del(age)
-    elif age <= 16 or age >= 25:
-            print(ages.count(25))
-    else:
-        print(ages)
-        continue
+#    if age >= 65:
+#        del(age)
+#    elif age <= 16 or age >= 25:
+#            print(ages.count(25))
+#    else:
+#        print(ages)
+#        continue
         
 
 
@@ -33,4 +33,5 @@ ages = [age for age in ages if 16 <= age <= 65]
 print("Ages after removing outside range:", ages)
 
 count_16_to_25 = len([age for age in ages if 16 <= age <= 25])
-print(f"Count of 16-25 year olds: {count_16_to_25}")
+print("Count of 16-25 year olds: {}".format(count_16_to_25))
+#print(count_16_to_25.sort())
