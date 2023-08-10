@@ -4,9 +4,18 @@ carSale = open("/Users/Admin/Source/Repos/QA_Beta_Mainfraime_Cortex_02/Bond_Pyth
 carSale_r = carSale.read()
 my_list = carSale_r.split("\n")
 print(my_list)
+car_list = []
+
+with open("/Users/Admin/Source/Repos/QA_Beta_Mainfraime_Cortex_02/Bond_Python_Bond/Lab7/carSale.csv", "r") as file:
+    lines = file.readlines()
+    #file_list = lines.split(",")
+    for line in lines:
+        car_list.append(line)
+
+print(car_list)
 
 
-
+#WORK I  PROGRESS... :(
 
 
 
