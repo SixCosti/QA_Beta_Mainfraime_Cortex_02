@@ -15,7 +15,7 @@ with open("/Users/Admin/Source/Repos/QA_Beta_Mainfraime_Cortex_02/Bond_Python_Bo
 print(car_list)
 
 
-#WORK I  PROGRESS... :(
+#WORK IN  PROGRESS... :(
 
 
 
