@@ -1,4 +1,5 @@
 import pyodbc
+import csv
 
 def dbquery(statement):
     connectionString = r'DRIVER={ODBC Driver 13 for SQL Server};SERVER=.\SQLExpress;DATABASE=qastore;Trusted_Connection=yes'
@@ -59,3 +60,13 @@ selectedRows = dbquery(selectQuery)
 
 for row in selectedRows:
     print(row)
+
+
+
+csv_filer = open('student_output.csv', 'w', newline='')
+csv_writer = csv.writer(csv_filer)
+csv_writer.writerow(['StudentID', 'FirstName', 'Surname', 'Course', 'City'])  # Write header
+csv_writer.writerows(selectedRows)
+csv_filer.close()
+
+print('Data exported to student_output.csv')
